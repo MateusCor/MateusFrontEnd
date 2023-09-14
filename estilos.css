@@ -1,0 +1,102 @@
+h1 {
+    font-size: 50px; /*Tamanho da fonte */
+    font-family: Helvetica;
+    line-height: 1; /* Espaçamento */
+    color: #FFF;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-fill-color: rgb(251, 148, 236);
+}
+
+/*estilo para parágrafos (p) */
+p {
+    font-size: 30px; /*Tamanho da fonte */
+    font-family: Helvetica;
+    line-height: 1; /* Espaçamento */
+    color: #FFF;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(251, 148, 236);
+    -webkit-text-fill-color: rgb(251, 148, 236);
+}
+
+/* Estilo para a imagens */
+img {
+    position: relative;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    color: #fff;
+    display: flex;
+    border-radius: 5px;
+}
+
+.caixa {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    border-radius: 3px;
+}
+
+.caixa::before, .caixa::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
+    #ffff00, #00ff00, #0099ff, #001aff, #a200ff );
+    background-size: 200%;
+    border-radius: 8px;
+    animation: AnimarBorda 7s linear infinite;
+}
+
+
+@keyframes AnimarBorda {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 300%;
+    }
+}
+
+
+.caixa::after {
+    filter: blur(200px);
+}
+
+
+/* Estilo para links */
+a {
+    color:rgb(251, 148, 236); /* Largura máxima da imagem */
+    text-decoration: none; /* Altura automática proporcional */
+}
+
+/* Estilo para lonks quando o mouse passa por cima (houver) */
+a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+
+body {
+    background-image: linear-gradient(to top left, rgb(7, 4, 53), rgb(0, 0, 0));
+}
+
+.botao-simples {
+    background-color: rgb(251, 148, 236);
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor:crosshair;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-fill-color: rgb(251, 148, 236);
+}
+
+.botao-simples:hover {
+    background-color: rgb(152, 255, 152);
+}
+
