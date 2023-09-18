@@ -1,0 +1,55 @@
+body, html {
+    height: 100%;
+  background-color: black;
+
+    
+      /* Full height */
+      height: 100%;
+    
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+
+  .bg-image {
+
+    background-image: image-set("fundo.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+  
+        /* Full height */
+        height: 150%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/* Position text in the middle of the page/image */
+.bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.3); /* Black w/opacity/see-through */
+    color: black;
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: #ffe81f;
+    font-weight: bold;
+    border: 1px solid #ffe81f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -32%);
+    z-index: 2;
+    width: 80%;
+    padding: 70px;
+    text-align: center;
+    font-size: 20px;
+}
+
+h1 {
+  font-size: 75px;
+}
