@@ -1,0 +1,26 @@
+div#quadrado1 {
+    background-color: darkred;
+}
+
+div#quadrado2 {
+    background-color: darkolivegreen;
+}
+
+div#quadrado3 {
+    background-color: darkblue;
+}
+
+div#quadrado4{
+    background-color: darkgrey;
+}
+
+div#quadrado5 {
+    background-color: darkblue;
+}
+
+div {
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    width: 200px;
+    height: 200px;
+}
