@@ -1,0 +1,36 @@
+body {
+    margin: 70px;
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+}
+h2 {
+    color: white;
+    font-size: 35px;
+}
+
+.corName {
+    background-color: rgb(231, 18, 138);
+}
+
+.corHexa {
+    background-color: #B5A243;
+}
+
+.corRGB {
+    background-color: #0FFA00;
+}
+
+.corHSL {
+    background-color: #1274B3;
+}
+
+p {
+    font-size: 25px;
+}
+
+.trans {
+    background-color: rgba(165, 42, 42, 0.5);
+}
