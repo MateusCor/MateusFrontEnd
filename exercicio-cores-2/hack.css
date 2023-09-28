@@ -1,0 +1,16 @@
+body{
+    background-image: image-set("Anonymous_Hacker.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    color: #01A90C;
+    background-color: rgba(0,0,0,0.9);
+    margin: 375px;
+    font-size: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
