@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(12,12,12,12);
+    font: 18.8px Arial;
+    color: white;
+}
+
+h1 {
+    text-align: left;
+}
+
+.p1 {
+    text-align: left;
+}
+
+.p2 {
+    text-align: right;
+}
+
+.p3 {
+    text-align: center;
+}
+
+.p4 {
+    text-align: justify;
+}
