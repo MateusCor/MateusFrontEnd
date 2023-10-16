@@ -84,3 +84,120 @@ body {
     margin-right: 0.25rem;
 
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #Loading-screen {
+    background: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.loading {
+  transform: translate3d(0px, -100%, 0px);
+  transition: all 0.5s ease;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
+
+.progres {
+  width: 0;
+  height: 2px;
+  background: #003df9;
+  position: relative;
+  top: 45%;
+}
+
+.loading-logo {
+  position: relative;
+  color: #FFF;
+  top: 43%;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.loader-text {
+    position: relative;
+    color: #FFF;
+    top: 48%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
