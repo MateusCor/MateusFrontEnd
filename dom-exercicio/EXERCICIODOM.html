@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        .center {
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Sites de testes</h1>
+    <h2 class="center">Aqui você pode clicar e ver que a cor do título irá mudar:</h2>
+    <button id="botao1">Mudar título!</button>
+    <h2 class="center">Aqui você pode mudar o background do site, basta clicar no botão abaixo</h2>
+    <button id="botao2">Mudar background!</button>
+
+    <script>
+
+        document.getElementById('botao1')
+        .addEventListener('click', function(){
+            document.getElementById('titulo').style.color = 'red'
+        })
+
+        document.getElementById('botao2')
+        .addEventListener('click', function(){
+            document.body.style.backgroundImage = "url(https://img.freepik.com/vetores-gratis/fundo-de-galaxia-realista_23-2148991322.jpg)"
+            document.body.style.backgroundSize = 'cover'
+
+        })
+        
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
