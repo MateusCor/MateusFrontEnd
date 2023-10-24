@@ -48,15 +48,106 @@ body {
     border-radius: 0 0 3px 3px;
   }
   
-  header{
+
+/*Mobile*/
+
+@media (max-width: 768px) {
+  #nav-list {
+    display: none;
+  }
+  #nav-div-hidden {
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    max-height: 0;
+    max-width: 768px;
+    transition: max-height 0.8s ease;
+    flex-basis: 100%;
+    flex-grow: 1;
+    width: 768px;
+    background-color: #111111bb;
+  }
+
+  .nav-div-show {
+    max-height: 200px !important;
+  }
+
+  header {
     position: fixed;
     display: flex;
     z-index: 2;
-    height: 100px;
+    height: 120px;
     width: 100%;
     align-items: center;
     justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    flex-wrap: wrap;
   }
+  
+  .menu-icon {
+    display: block;
+    height: 2px;
+    width: 25px;
+    background: #FFF;
+    margin: 7px 0;
+    transition: .3s ease-in-out;
+  }
+  #menu-bar {
+    margin-right: 90px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    word-spacing: 25rem;
+    font-size: 15px;
+  }
+}
+
+/*Computer*/
+
+@media (min-width: 769px) {
+  #nav-list-hidden {
+    display: none;
+  }
+  #menu-bar {
+    display: none;
+  }
+  header {
+    position: fixed;
+    display: flex;
+    z-index: 2;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    font-size: 15px;
+  }
+  #Logo {
+    margin-right: 640px;
+  }
+}
+header {
+  background-color: #111111bb;
+}
+  #LogoLink {
+    text-decoration: line-through black;
+  }
+
+  #logoText {
+    text-transform: capitalize;
+    color: white;
+    font-family: Accelerated;
+    font-size: 35px;
+    margin-left: 50px;
+  }
+
 
   img {
     padding: 0;
@@ -72,13 +163,8 @@ body {
     display: inline-block;
     font-family: Accelerated;
     transition: color 0.2s ease;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: row;
-    margin-top: 40px;
-    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
   }
 
   li {
@@ -93,14 +179,16 @@ body {
   margin-right: 60px;
 } 
 
-
+strong {
+  color: #0040ff;
+}
 
 
 
 
 
   #Loading-screen {
-    background: rgb(0, 0, 0);
+    background: #000000;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -112,7 +200,7 @@ body {
 
 .loading {
   transform: translate3d(0px, -100%, 0px);
-  transition: all 2s ease;
+  transition: transform 2s ease;
 }
 
 *, ::after, ::before {
@@ -162,20 +250,8 @@ div {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .menu-icon {
-    display: block;
+    align-self: flex-end;
     height: 2px;
     width: 25px;
     background: #FFF;
@@ -288,11 +364,6 @@ div {
 
 
 */
-
-#nav-list-hidden {
-  display: none;
-}
-
 
 
 
