@@ -14,7 +14,6 @@ button.addEventListener("click", function() {
 
 // -------------
 
-
 let button = document.getElementById("menu-bar")
 
 let menu = document.getElementById("nav-list")
@@ -64,3 +63,4 @@ let hiddenDiv = document.getElementById("nav-div-hidden")
 
 button.addEventListener("click", function() {
 })*/
+
