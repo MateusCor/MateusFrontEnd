@@ -1,0 +1,104 @@
+body {
+    background-color: black;
+    padding: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+@font-face { font-family: Accelerated; src: url('Vampire\ Wars\ Italic.ttf'); }
+@font-face {
+    font-family: Nomes;
+    src: url('Cinzel-Black.otf');
+}
+
+.caixa-título {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    border-color: #0040ff;
+    border-width: 0.05cm;
+    border-radius: 5px;
+}
+
+.título {
+    color: white;
+    white-space: nowrap;
+    margin-right: 20px;
+    text-decoration: line-through black;  
+}
+
+.texto {
+    color: white;
+    margin-left: 35px;
+}
+
+strong {
+    color: #0040ff;
+}
+
+h1 {
+    font-family: Accelerated;
+    font-size: 55px;
+}
+
+.quadrado#quadrado1 {
+    background-image: url("greg.png");
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+.quadrado#quadrado2 {
+    background-image: url("mateus.png");
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+.quadrado#quadrado3 {
+    background-image: url("ric.png");
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+.quadrado#quadrado4{
+    background-image: url("diogo.png");
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+.quadrado {
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    width: 280px;
+    height: 300px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.nomes {
+    display: inline-block;
+    color: white;
+    font-size: 23px;
+    font-family: Nomes;
+}
+
+h3 {
+    padding-left: 80px;
+    margin-top: 30px;
+}
+
+#nomes2 {
+    margin-left: 100px;
+}
+
+#nomes3 {
+    margin-left: 115px;
+}
+
+#nomes4 {
+    margin-left: 115px;
+}
