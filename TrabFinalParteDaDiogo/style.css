@@ -1,8 +1,11 @@
 body {
     background-color: black;
     padding: 40px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin: 0;
+}
+
+p {
+    color: white;
 }
 
 .caixa-título {
@@ -13,11 +16,13 @@ body {
 
 .linha {
     width: 100%;
-    height: 1px;
-
+    height: 2px;
+    background-color: blue;
+    border-color: transparent;
+    
 }
 
-.maior {
+#maior {
     justify-content: space-between;
 }
 
@@ -44,13 +49,11 @@ body {
 }
 
 .fotoDaDireita {
-    
     width: 300px;
 }
 
 .imagemDeBaixo {
     margin-top: 40px;
-
 }
 
 .fotoDeBaixo {
@@ -61,4 +64,39 @@ body {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+}
+
+#maior2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#alinhar-tudo {
+    display: flex;
+    justify-content: space-around;
+}
+
+#alinhar {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto3 {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+#todostxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    margin-top: 3%;
+    padding: 5px 5px 5px 0px;
+}
+
+#pai-das-imagens {
+   
 }
