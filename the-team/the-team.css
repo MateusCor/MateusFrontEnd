@@ -86,9 +86,16 @@ h1 {
     font-family: Nomes;
 }
 
+.founder {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.612);
+    font-size: 16px;
+    font-family: Arial;
+}
+
+
 h3 {
     padding-left: 80px;
-    margin-top: 30px;
 }
 
 #nomes2 {
@@ -101,4 +108,20 @@ h3 {
 
 #nomes4 {
     margin-left: 115px;
+}
+
+#founder1 {
+    margin-left: 125px;
+}
+
+#founder2 {
+    margin-left: 225px;
+}
+
+#founder3 {
+    margin-left: 220px;
+}
+
+#founder4 {
+    margin-left: 220px;
 }
