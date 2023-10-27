@@ -1,0 +1,483 @@
+
+/* ---- reset ---- */
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+    background-color: #000000;
+  }
+  canvas {
+    display: block;
+  } /* ---- particles.js container ---- */
+  #particles-js {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 1;
+  } /* ---- stats.js ---- */
+  .count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13e8e9;
+    font-size: 0.8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+  .js-count-particles {
+    font-size: 1.1em;
+  }
+  #stats,
+  .count-particles {
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  #stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  .count-particles {
+    border-radius: 0 0 3px 3px;
+  }
+  
+
+/*Mobile*/
+
+@media (max-width: 768px) {
+  #nav-list {
+    display: none;
+  }
+  #nav-div-hidden {
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    max-height: 0;
+    max-width: 768px;
+    transition: max-height 0.8s ease;
+    flex-basis: 100%;
+    flex-grow: 1;
+    width: 768px;
+    background-color: #111111bb;
+  }
+
+  .nav-div-show {
+    max-height: 200px !important;
+  }
+
+  header {
+    position: fixed;
+    display: flex;
+    z-index: 2;
+    height: 120px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    flex-wrap: wrap;
+  }
+  
+  .menu-icon {
+    display: block;
+    height: 2px;
+    width: 25px;
+    background: #FFF;
+    margin: 7px 0;
+    transition: .3s ease-in-out;
+  }
+  #menu-bar {
+    margin-right: 90px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    word-spacing: 25rem;
+    font-size: 15px;
+  }
+}
+
+/*Computer*/
+
+@media (min-width: 769px) {
+  #nav-list-hidden {
+    display: none;
+  }
+  #menu-bar {
+    display: none;
+  }
+  header {
+    position: fixed;
+    display: flex;
+    z-index: 2;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+  }
+  #Logo {
+    margin-right: auto;
+    margin-left: 50px;
+  }
+  .linha {
+    height: 1px;
+    border-color: #003df9;
+    width: 80%;
+    transition: all 0.2s ease;
+  }
+
+  .linhaDiv {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    
+  }
+  
+  .caixa-título {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+  }
+  
+  #about, #games, #team {
+    font-size: 30px;
+    margin: 0;
+    font-family: Accelerated;
+    color: white;
+    text-decoration: line-through #000000;
+    margin-left: 50px;
+    transition: all 0.2s ease;
+    line-break: strict;
+  }
+}
+header {
+  background-color: #111111bb;
+}
+  #LogoLink {
+    text-decoration: line-through black;
+  }
+
+  #logoText {
+    text-transform: capitalize;
+    color: white;
+    font-family: Accelerated;
+    font-size: 35px;
+  }
+
+  img {
+    padding: 0;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+
+  .nav-link {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Accelerated;
+    transition: color 0.2s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+  li {
+    margin-left: 1rem;
+    margin-right: 0.25rem;
+
+  }
+
+
+
+.botoes {
+  margin-right:150px
+} 
+
+strong {
+  color: #0040ff;
+}
+
+
+
+
+
+  #Loading-screen {
+    background: #000000;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.loading {
+  transform: translate3d(0px, -100%, 0px);
+  transition: transform 2s ease;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
+
+.progres {
+  width: 0;
+  height: 2px;
+  background: #003df9;
+  position: relative;
+  top: 45%;
+}
+
+.loading-logo {
+  position: relative;
+  color: #FFF;
+  top: 43%;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.loader-text {
+    position: relative;
+    color: #FFF;
+    top: 48%;
+}
+
+
+.nav-link:hover {
+  color: rgb(34, 0, 255)
+}
+
+@font-face { font-family: Accelerated; src: url('Vampire\ Wars\ Italic.ttf'); }
+
+
+
+
+
+
+
+.menu-icon {
+    align-self: flex-end;
+    height: 2px;
+    width: 25px;
+    background: #FFF;
+    margin: 7px 0;
+    transition: .3s ease-in-out;
+}
+
+.bar-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#menu-bar .menu-icon:nth-child(1):hover {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: .3s ease-in-out;
+}
+
+#menu-bar .menu-icon:nth-child(1):hover {
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#menu-bar .menu-icon:nth-child(2):hover {
+  width: 0%;
+  opacity: 0;
+}
+
+#menu-bar .menu-icon:nth-child(2):hover {
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#menu-bar .menu-icon:nth-child(3):hover {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#menu-bar .menu-icon:nth-child(3):hover {
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+
+@keyframes animation {
+
+  from {background-color: black;}
+  to {background-color: #003df9};
+
+
+}
+
+
+
+.maior {
+  background-color: #000000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+
+
+.caixa-título {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    border-color: #0040ff;
+    border-width: 0.05cm;
+    border-radius: 5px;
+}
+
+@media (min-width: 769px) {
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+  
+  .item {
+    width: 260px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .item h3,
+  .item p {
+    margin: 0;
+    color: white;
+  }
+}
+
+#pTeam {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    padding-left: 70px;
+    padding-right: 70px;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    width: 280px;
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .item h3,
+  .item p {
+    margin: 0;
+  }
+
+
+
+@media (max-width: 1280px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .item {
+        width: 280px;
+      }
+      
+      .item img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .item h3,
+      .item p {
+        margin: 0;
+      }
+  }
+
+
+
+@media (max-width: 1024px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .item {
+        width: 280px;
+      }
+      
+      .item img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .item h3,
+      .item p {
+        margin: 0;
+      }
+  }
+
+  @media (max-width: 768px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .item {
+        width: 280px;
+      }
+      
+      .item img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .item h3,
+      .item p {
+        margin: 0;
+      }
+  }

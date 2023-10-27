@@ -1,0 +1,22 @@
+ <script>
+        document.addEventListener("DOMContentLoaded", function() {
+  // Função para ocultar a tela de loading com animação de deslizamento para cima após 3 segundos
+  function hideLoadingScreen() {
+    var loadingScreen = document.getElementById("Loading-screen");
+
+    // Aguarde 1 segundos antes de adicionar a classe de animação
+    setTimeout(function () {
+      loadingScreen.classList.add("loading-slide-up");
+    }, 1000);
+
+    // Aguarde 1,5 segundos (3 segundos + 0,5 segundos de duração da animação) antes de ocultar a tela de loading
+    setTimeout(function () {
+      loadingScreen.style.display = "none";
+    }, 1500);
+  }
+
+  // Chamando a função após a página ser completamente carregada
+  window.addEventListener("load", hideLoadingScreen);
+});
+
+    </script>
