@@ -1,66 +1,36 @@
-/*let button = document.getElementById("menu-bar")
-
-let menu = document.getElementById("menu-2")
-
-let lilBars = document.getElementsByClassName("menu-icon")
-
-button.addEventListener("click", function() {
-    if (menu.style.display === "none") {
-        menu.style.display = "block"
-    } else {
-        menu.style.display ="none"
-    }
-})*/
-
-// -------------
+// Variables being used
 
 let button = document.getElementById("menu-bar")
 
-let menu = document.getElementById("nav-list")
-
-let lilBars = document.getElementsByClassName("menu-icon")
-
-let hiddenMenu = document.getElementById("nav-list-hidden")
-
 let hiddenDiv = document.getElementById("nav-div-hidden")
 
-// remake after learning JQuery
-/*
-function menuAbakadabra() {
-    if (window.innerWidth <= "800") {
-        menu.style.display = "none"
-        button.style.display = "block"
-    } else {
-        menu.style.display = "flex"
-        button.style.display = "none"
-    }
-}
+let loading = document.getElementById("Loading-screen")
 
-*/
+let menuOpen = false
+
+// This makes the hidden navigation bar appear and hide
+
 button.addEventListener("click", function() {
     hiddenDiv.classList.toggle('nav-div-show')
 })
-/*
-setInterval(menuAbakadabra, 1);
 
+// This is for the loading screen to work
 
----
+function loaded() {
+        loading.style.transform = "translate3d(0px, -100%, 0px)"
+        loading.style.transition = "transform 2s ease"
+}
+
+setTimeout(loaded, 3000);
+
+// Code for the menu icon to work
+
 button.addEventListener("click", function() {
-    if (menu.style.display === "none") {
-        menu.style.display = "block"
+    if (!menuOpen) {
+        button.classList.add("open")
+        menuOpen = true
     } else {
-        menu.style.display ="none"
+        button.classList.remove("open")
+        menuOpen = false
     }
-*//*
-
-let button = document.getElementById("menu-bar")
-
-let menu = document.getElementById("nav-list")
-
-let hiddenMenu = document.getElementById("nav-list-hidden")
-
-let hiddenDiv = document.getElementById("nav-div-hidden")
-
-button.addEventListener("click", function() {
-})*/
-
+})
